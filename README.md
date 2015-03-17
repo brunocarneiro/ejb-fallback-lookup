@@ -6,23 +6,26 @@ This project solve this problem. It's an interceptor (or EJB interceptor or CDI 
 
 -Configuring CDI Interceptor (Recommended if you're using Java EE 6):
 
-  pom.xml
-    <dependency>
-      <artifactId>monitoring-tools</artifactId>
-      <groupId>com.github.brunocarneiro</groupId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+pom.xml
+
+	<dependency>
+		<groupId>com.github.brunocarneiro</groupId>
+		<artifactId>ejbfallback</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 
 -Configuring EJB Interceptor:
 
-  pom.xml
-    <dependency>
-      <artifactId>monitoring-tools</artifactId>
-      <groupId>com.github.brunocarneiro</groupId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+pom.xml
+
+	<dependency>
+		<groupId>com.github.brunocarneiro</groupId>
+		<artifactId>ejbfallback</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   
-  ejb-jar.xml
+ejb-jar.xml
+
     <assembly-descriptor>
   		<interceptor-binding>
   			<ejb-name>*</ejb-name>
